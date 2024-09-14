@@ -1,6 +1,6 @@
 <section class="jobtable sub">
 	<div class="side_con">
-		<p class="s_title">인재정보<span>총<em class="red"><?php echo number_format(intval($_arr['total']));?></em>건</span></p>
+		<p class="s_title">Thông tin tài năng<span>총<em class="red"><?php echo number_format(intval($_arr['total']));?></em>건</span></p>
 		<?php if(!$not_is_search_part) {?>
 		<div class="select_area">
 			<select name="sort_resume" onChange="nf_job.ch_sort(this, 'fsearch1')" code="resume">

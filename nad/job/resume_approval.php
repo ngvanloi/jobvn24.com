@@ -55,7 +55,7 @@ switch($_GET['mode']) {
 		}?>
 		<input type="hidden" name="prev_page" value="<?php echo urlencode($nf_util->page_back());?>" />
 		<div class="conbox">
-			<h6>인재정보</h6>
+			<h6>Thông tin tài năng</h6>
 			<table>
 				<colgroup>
 					<col width="10%">

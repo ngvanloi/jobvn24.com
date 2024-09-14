@@ -74,7 +74,7 @@ var click_blind = function(el, bo_table, no) {
 						</colgroup>
 						<tbody>
 							<tr>
-								<th>커뮤니티</th>
+								<th>Cộng đồng</th>
 								<td>
 									<ul>
 										<?php

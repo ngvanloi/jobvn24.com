@@ -129,7 +129,7 @@ var ch_status = function(el, no) {
 					<tr>
 						<th><input type="checkbox" id="check_all" onclick="nf_util.all_check(this, '.chk_')"></th>
 						<th>업소명/아이디/담당자명</th>
-						<th colspan="2">구인정보</th>
+						<th colspan="2">Thông tin việc làm</th>
 						<th>신고자(아이디)</th>
 						<th>신고일</th>
 						<th>신고사유</th>

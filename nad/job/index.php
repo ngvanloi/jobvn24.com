@@ -341,7 +341,7 @@ var sel_service = function() {
 						<th>등급구분</th>
 						<th>회원등급</th>
 						<th>회원정보</th>
-						<th colspan="2">구인정보</th>
+						<th colspan="2">Thông tin việc làm</th>
 						<th>서비스/기간</th>
 						<th>편집</th>
 					</tr>

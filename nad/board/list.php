@@ -54,7 +54,7 @@ var click_modify = function(el, no, code) {
 						</colgroup>
 						<tbody>
 							<tr>
-								<th>커뮤니티</th>
+								<th>Cộng đồng</th>
 								<td>
 									<ul>
 										<?php

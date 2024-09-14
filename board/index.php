@@ -1,10 +1,10 @@
 <?php
-$_site_title_ = "커뮤니티";
+$_site_title_ = "Cộng đồng";
 include "../engine/_core.php";
 
 if(!$_GET['cno']) $_GET['cno'] = $nf_board->board_botable_k_arr[0];
 
-// : 메인 미사용인경우
+// : Nếu không sử dụng trang chính
 if(!$nf_board->main_row['use_main']) {
 	$bo_table_array = array_keys($nf_board->board_botable_arr[$_GET['cno']]);
 	die($nf_util->move_url(NFE_URL."/board/list.php?bo_table=".$bo_table_array[0], ""));
@@ -27,7 +27,7 @@ include NFE_PATH.'/include/m_title.inc.php';
 
 <div class="wrap1260 my_sub">
 	<section class="sub">
-		<!--개인서비스 왼쪽 메뉴-->
+		<!--Menu bên trái dịch vụ cá nhân-->
 		<?php
 		include '../include/board_leftmenu.php';
 		?>
@@ -58,7 +58,7 @@ include NFE_PATH.'/include/m_title.inc.php';
 						</a>
 					</div>
 					<div class="best_list">
-						<h3>금주의 베스트</h3>
+						<h3>Top của tuần</h3>
 						<ul>
 							<?php
 							for($i=1; $i<$max_hit_array['length']; $i++) {
@@ -81,7 +81,7 @@ include NFE_PATH.'/include/m_title.inc.php';
 						$board_info = $bo_row = $nf_board->board_table_arr[$bo_table];
 						$bo_print = $nf_board->main_row['print_board_un'][$bo_table];
 						if(!$bo_print['view']) continue;
-						if(!$nf_board->board_menu[$_GET['cno']][$board_info['code']]['wr_view']) continue; // : 게시판 2차메뉴 사용여부
+						if(!$nf_board->board_menu[$_GET['cno']][$board_info['code']]['wr_view']) continue; // : Sử dụng menu phụ của bảng
 
 						$bo_type = $bo_print['print_type']=='talk' ? 'text' : $bo_print['print_type'];
 						$cnt = $bo_print['print_cnt'];
@@ -108,5 +108,5 @@ include NFE_PATH.'/include/m_title.inc.php';
 	</section>
 </div>
 
-<!--푸터영역-->
+<!--Khu vực chân trang-->
 <?php include '../include/footer.php'; ?>

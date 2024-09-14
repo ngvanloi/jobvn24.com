@@ -45,7 +45,7 @@ $(function(){
 	</div>
 
 	<section class="employ_main sub">
-		<p class="s_title">구인정보</p>
+		<p class="s_title">Thông tin việc làm</p>
 		<form name="fsearch1" action="<?php echo $_SERVER['PHP_SELF'];?>" method="get">
 		<input type="hidden" name="sort_employ" value="<?php echo $nf_util->get_html($_GET['sort_employ']);?>" />
 		<input type="hidden" name="page_row" value="<?php echo $nf_util->get_html($_GET['page_row']);?>" />

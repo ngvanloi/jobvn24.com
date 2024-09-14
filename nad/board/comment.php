@@ -55,7 +55,7 @@ $query = $db->_query("select * from ".$q.$order." limit ".$paging['start'].", ".
 						</colgroup>
 						<tbody>
 							<tr>
-								<th>커뮤니티</th>
+								<th>Cộng đồng</th>
 								<td>
 									<ul>
 										<?php

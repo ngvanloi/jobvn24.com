@@ -151,7 +151,7 @@
 						<th><a href="">등급구분▼</a></th>
 						<th>회원등급</th>
 						<th>업소명/아이디/담당자명</th>
-						<th colspan="2">구인정보</th>
+						<th colspan="2">Thông tin việc làm</th>
 						<th>서비스/기간</th>
 						<th>편집</th>
 					</tr>

@@ -1,5 +1,5 @@
 <?php
-$_site_title_ = "커뮤니티";
+$_site_title_ = "Cộng đồng";
 include "../engine/_core.php";
 
 $bo_table = $_GET['bo_table'];
@@ -23,7 +23,7 @@ include NFE_PATH.'/include/m_title.inc.php';
 
 <div class="wrap1260 my_sub">
 	<section class="sub">
-		<!--개인서비스 왼쪽 메뉴-->
+		<!-- Thực đơn bên trái dịch vụ cá nhân -->
 		<?php include '../include/board_leftmenu.php'; ?>
 		<div class="subcon_area">
 			<?php if(stripslashes($bo_row['bo_content_head'])) {?>
@@ -40,31 +40,28 @@ include NFE_PATH.'/include/m_title.inc.php';
 					<ul class="fr">
 						<li>
 							<select name="search_field">
-								<option value="">선택</option>
-								<option value="wr_subject" <?php echo $_GET['search_field']=='wr_subject' ? 'selected' : '';?>>제목</option>
-								<option value="sub+con" <?php echo $_GET['search_field']=='sub+con' ? 'selected' : '';?>>제목+내용</option>
+								<option value="">Chọn</option>
+								<option value="wr_subject" <?php echo $_GET['search_field']=='wr_subject' ? 'selected' : '';?>>Tiêu đề</option>
+								<option value="sub+con" <?php echo $_GET['search_field']=='sub+con' ? 'selected' : '';?>>Tiêu đề+Nội dung</option>
 							</select>
 							<input type="text" name="search_keyword" value="<?php echo $nf_util->get_html($_GET['search_keyword']);?>">
-							<button>검색</button>
+							<button>Tìm kiếm</button>
 						</li>
 						<li>
 							<select name="page_row" onChange="nf_util.ch_page_row(this, 'fbsearch')">
-								<option value="15" <?php echo $_GET['page_row']=='15' ? 'selected' : '';?>>15개출력</option>
-								<option value="30" <?php echo $_GET['page_row']=='30' ? 'selected' : '';?>>30개출력</option>
-								<option value="50" <?php echo $_GET['page_row']=='50' ? 'selected' : '';?>>50개출력</option>
-								<option value="100" <?php echo $_GET['page_row']=='100' ? 'selected' : '';?>>100개출력</option>
+								<option value="15" <?php echo $_GET['page_row']=='15' ? 'selected' : '';?>>Hiển thị 15 mục</option>
+								<option value="30" <?php echo $_GET['page_row']=='30' ? 'selected' : '';?>>Hiển thị 30 mục</option>
+								<option value="50" <?php echo $_GET['page_row']=='50' ? 'selected' : '';?>>Hiển thị 50 mục</option>
+								<option value="100" <?php echo $_GET['page_row']=='100' ? 'selected' : '';?>>Hiển thị 100 mục</option>
 							</select>
 						</li>
 					</ul>
 					</form>
 				</div>
 
-
-				
-
 				<?php if($bo_row['bo_category_list']) {?>
 				<ul class="tab_menu">
-					<li class="<?php echo $_GET['bunru'] ? '' : 'on';?>"><a href="./list.php?bo_table=<?php echo $bo_table;?>">전체</a></li>
+					<li class="<?php echo $_GET['bunru'] ? '' : 'on';?>"><a href="./list.php?bo_table=<?php echo $bo_table;?>">Tất cả</a></li>
 					<?php
 					if(is_Array($board_info['bo_category_list_arr'])) { foreach($board_info['bo_category_list_arr'] as $k=>$v) {
 						$on = $v==$_GET['bunru'] ? 'on' : '';
@@ -76,13 +73,13 @@ include NFE_PATH.'/include/m_title.inc.php';
 				<?php }?>
 
 				<?php
-				// : 게시판 리스트
+				// : Danh sách bảng tin
 				$skin = $bo_row['bo_type'];
 				include './list.inc.php';
 				?>
 				<div class="wr_btn_con">
 					<?php if($nf_board->auth($bo_table, 'write')) {?>
-					<a href="./write.php?bo_table=<?php echo $bo_table;?>"><button type="button"><i class="axi axi-pencil-square"></i>글쓰기</button></a>
+					<a href="./write.php?bo_table=<?php echo $bo_table;?>"><button type="button"><i class="axi axi-pencil-square"></i>Viết bài</button></a>
 					<?php }?>
 				</div>
 
@@ -95,6 +92,5 @@ include NFE_PATH.'/include/m_title.inc.php';
 	</section>
 </div>
 
-
-<!--푸터영역-->
+<!-- Khu vực chân trang -->
 <?php include '../include/footer.php'; ?>

@@ -23,7 +23,7 @@ $(function(){
 <?php }?>
 </script>
 <div class="m_title">
-	<button class="back" onclick="history.back()"><i class="axi axi-keyboard-arrow-left"></i></button>인재정보<button class="forward" onclick="history.forward()"><i class="axi axi-keyboard-arrow-right"></i></button>
+	<button class="back" onclick="history.back()"><i class="axi axi-keyboard-arrow-left"></i></button>Thông tin tài năng<button class="forward" onclick="history.forward()"><i class="axi axi-keyboard-arrow-right"></i></button>
 </div>
 
 <div class="wrap1260 MAT20">
@@ -35,7 +35,7 @@ $(function(){
 	</div>
 
 	<section class="sub">
-		<p class="s_title">인재정보</p>
+		<p class="s_title">Thông tin tài năng</p>
 		<form name="fsearch1" action="<?php echo $_SERVER['PHP_SELF'];?>" method="get">
 		<input type="hidden" name="sort_resume" value="<?php echo $nf_util->get_html($_GET['sort_resume']);?>" />
 		<input type="hidden" name="page_row" value="<?php echo $nf_util->get_html($_GET['page_row']);?>" />

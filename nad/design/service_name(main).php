@@ -64,7 +64,7 @@ var ch_service_name = function(el, kind, service_k) {
 					<tr>
 						<?php if($count===0) {?>
 						<td class="tac" rowspan="<?php echo intval($service_len);?>"><img src="../../images/nad/ervice_name(main).jpg" alt=""></td>
-						<th rowspan="<?php echo intval($service_em_len);?>" class="tac">구인정보</th>
+						<th rowspan="<?php echo intval($service_em_len);?>" class="tac">Thông tin việc làm</th>
 						<?php }?>
 						<th class="tac">구인<?php echo substr($nf_util->alphabet, $count, 1);?>영역</th>
 						<td class="tac"><em class="service_name_txt"><?php echo $v;?></em> 구인정보</td>
@@ -84,7 +84,7 @@ var ch_service_name = function(el, kind, service_k) {
 					?>
 					<tr>
 						<?php if($count===0) {?>
-						<th rowspan="<?php echo $service_re_len;?>" class="tac">인재정보</th>
+						<th rowspan="<?php echo $service_re_len;?>" class="tac">Thông tin tài năng</th>
 						<?php }?>
 						<th class="tac">인재<?php echo substr($nf_util->alphabet, $count, 1);?>영역</th>
 						<td class="tac"><em class="service_name_txt"><?php echo $v;?></em> 인재정보</td>

@@ -22,22 +22,22 @@ $nums = $db->num_rows($query);
 	<input type="hidden" name="code" value="comment_insert" />
 	<input type="hidden" name="bo_table" value="<?php echo $bo_table;?>" />
 	<input type="hidden" name="no" value="<?php echo intval($b_row['wr_no']);?>" />
-	<h3>전체댓글 <em class="rpy_num"><?php echo number_format(intval($b_row['wr_comment']));?></em></h3>
+	<h3>Tất cả bình luận <em class="rpy_num"><?php echo number_format(intval($b_row['wr_comment']));?></em></h3>
 	<div class="reply_con_write">
 		<?php if(!$member['no']) {?>
 		<div class="input_area">
 			<ul>
-				<li><label>이름</label><input type="text" name="wr_name" hname="이름" needed></li>
-				<li><label>비밀번호</label><input type="password" name="wr_password" hname="비밀번호" needed></li>
-				<li><label>자동등록방지 문자입력</label><input type="text" name="rand_number" hname="자동등록방지 문자" needed>
+				<li><label>Tên</label><input type="text" name="wr_name" hname="Tên" needed></li>
+				<li><label>Mật khẩu</label><input type="password" name="wr_password" hname="Mật khẩu" needed></li>
+				<li><label>Nhập mã xác thực tự động</label><input type="text" name="rand_number" hname="Mã xác thực tự động" needed>
 				<span><img src="<?php echo NFE_URL;?>/include/rand_text.php?no=<?php echo $b_row['wr_no'];?>&bo_table=<?php echo $bo_table;?>" align="absmiddle"></span>
 				</li>
 			</ul>
 		</div>
 		<?php }?>
 		<div class="text_area">
-			<textarea name="wr_content" hname="댓글내용" needed placeholder="댓글을 입력하세요."></textarea>
-			<button>등록</button>
+			<textarea name="wr_content" hname="Nội dung bình luận" needed placeholder="Nhập bình luận."></textarea>
+			<button>Đăng</button>
 		</div>
 	</div>
 	</form>
@@ -49,10 +49,10 @@ $nums = $db->num_rows($query);
 		<input type="hidden" name="comment_id" value="" />
 		<input type="hidden" name="code" value="" />
 		<input type="hidden" name="bo_table" value="<?php echo $bo_table;?>" />
-		<input type="hidden" name="wr_name" value="" hname="이름" needed />
-		<input type="password" name="wr_password" value="" hname="비밀번호" needed />
-		<input type="hidden" name="rand_number" value="" hname="자동등록방지 문자" <?php echo $member['no'] ? '' : 'needed';?> />
-		<textarea name="wr_content" value="" hname="댓글내용" needed></textarea>
+		<input type="hidden" name="wr_name" value="" hname="Tên" needed />
+		<input type="password" name="wr_password" value="" hname="Mật khẩu" needed />
+		<input type="hidden" name="rand_number" value="" hname="Mã xác thực tự động" <?php echo $member['no'] ? '' : 'needed';?> />
+		<textarea name="wr_content" value="" hname="Nội dung bình luận" needed></textarea>
 		</form>
 	</div>
 
@@ -63,10 +63,10 @@ $nums = $db->num_rows($query);
 			$b_info = $nf_board->info($row, $board_info);
 
 			$is_secret = $row['wr_secret'];
-			if($row['mno'] && $row['mno']==$member['no']) $is_secret = false; // : 내 비밀글
-			if($b_row['mno'] && $b_row['mno']==$member['no']) $is_secret = false; // : 원글 주인
-			if($is_admin) $is_secret = false; // : 관리자권한
-			if($_SESSION['board_view_'.$bo_table.'_'.$row['wr_no']]) $is_secret = false; // : 비밀번호를 통해 접근
+			if($row['mno'] && $row['mno']==$member['no']) $is_secret = false; // : Bình luận bí mật của tôi
+			if($b_row['mno'] && $b_row['mno']==$member['no']) $is_secret = false; // : Chủ bài viết gốc
+			if($is_admin) $is_secret = false; // : Quyền quản trị viên
+			if($_SESSION['board_view_'.$bo_table.'_'.$row['wr_no']]) $is_secret = false; // : Truy cập qua mật khẩu
 
 			$is_blind = false;
 			$is_del = false;
@@ -84,37 +84,37 @@ $nums = $db->num_rows($query);
 		?>
 		<li>
 			<div class="top">
-				<p>홍길동<span>2022-02-02</span></p>
+				<p>Hong Gil Dong<span>2022-02-02</span></p>
 				<ul>
-					<li><a href=""><i class="axi axi-create"></i> 답글</a></li>
-					<li><a href=""><i class="axi axi-settings"></i> 수정</a></li>
-					<li><a href=""><i class="axi axi-trash-o"></i> 삭제</a></li>
+					<li><a href=""><i class="axi axi-create"></i> Trả lời</a></li>
+					<li><a href=""><i class="axi axi-settings"></i> Chỉnh sửa</a></li>
+					<li><a href=""><i class="axi axi-trash-o"></i> Xoá</a></li>
 				</ul>
 			</div>
-			<p>댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용</p>
-			<!--수정 예시-->
+			<p>Nội dung bình luận nội dung bình luận...</p>
+			<!--Ví dụ chỉnh sửa-->
 			<div class="reply_con_write">
 				<form action="">
 					<?php if(!$member['no']) {?>
 					<div class="input_area">
 						<ul>
-							<li><label>이름</label><input type="text" name="wr_name" hname="이름" needed haname="이름"></li>
-							<li><label>비밀번호</label><input type="password" name="wr_password" hname="비밀번호" needed haname="비밀번호"></li>
-							<li><label>자동등록방지 문자입력</label><input type="text" name="rand_number" hname="자동등록방지 문자" needed haname="자동등록방지 문자입력">
+							<li><label>Tên</label><input type="text" name="wr_name" hname="Tên" needed haname="Tên"></li>
+							<li><label>Mật khẩu</label><input type="password" name="wr_password" hname="Mật khẩu" needed haname="Mật khẩu"></li>
+							<li><label>Nhập mã xác thực tự động</label><input type="text" name="rand_number" hname="Mã xác thực tự động" needed haname="Nhập mã xác thực tự động">
 							<span><img src="<?php echo NFE_URL;?>/include/rand_text.php?no=<?php echo $b_row['wr_no'];?>&bo_table=<?php echo $bo_table;?>" align="absmiddle"></span>
 							</li>
 						</ul>
 					</div>
 					<?php }?>
 					<div class="text_area">
-						<textarea name="wr_content" hname="댓글내용" needed placeholder="댓글을 입력하세요."></textarea>
-						<button>등록</button>
+						<textarea name="wr_content" hname="Nội dung bình luận" needed placeholder="Nhập bình luận."></textarea>
+						<button>Đăng</button>
 					</div>
 				</form>
 			</div>
-			<!--//수정 예시-->
+			<!--//Ví dụ chỉnh sửa-->
 			<div class="bottom">
-				<p><button type="button">댓글 (0)</button></p>
+				<p><button type="button">Bình luận (0)</button></p>
 				<ul>
 					<li><button	type="button"><i class="axi axi-thumbs-o-up"></i>0</button></li>
 					<li><button	type="button"><i class="axi axi-thumbs-o-down"></i>0</button></li>
@@ -123,12 +123,12 @@ $nums = $db->num_rows($query);
 			<ul class="re_reply_list">
 				<li>
 					<div class="top">
-						<p>홍길동<span>2022-02-02</span></p>
+						<p>Hong Gil Dong<span>2022-02-02</span></p>
 						<ul>
-							<li><a href=""><i class="axi axi-trash-o"></i> 삭제</a></li>
+							<li><a href=""><i class="axi axi-trash-o"></i> Xóa</a></li>
 						</ul>
 					</div>
-					<p>댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용</p>
+					<p>Nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận</p>
 					<div class="bottom">
 						<ul>
 							<li><button	type="button"><i class="axi axi-thumbs-o-up"></i>0</button></li>
@@ -140,16 +140,16 @@ $nums = $db->num_rows($query);
 		</li>
 		<li>
 			<div class="top">
-				<p>홍길동<span>2022-02-02</span></p>
+				<p>Hong Gil Dong<span>2022-02-02</span></p>
 				<ul>
-					<li><a href=""><i class="axi axi-create"></i> 답글</a></li>
-					<li><a href=""><i class="axi axi-settings"></i> 수정</a></li>
-					<li><a href=""><i class="axi axi-trash-o"></i> 삭제</a></li>
+					<li><a href=""><i class="axi axi-create"></i> Trả lời</a></li>
+					<li><a href=""><i class="axi axi-settings"></i> Chỉnh sửa</a></li>
+					<li><a href=""><i class="axi axi-trash-o"></i> Xóa</a></li>
 				</ul>
 			</div>
-			<p>댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용</p>
+			<p>Nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận</p>
 			<div class="bottom">
-				<p><button type="button">댓글 (0)</button></p>
+				<p><button type="button">Bình luận (0)</button></p>
 				<ul>
 					<li><button	type="button"><i class="axi axi-thumbs-o-up"></i>0</button></li>
 					<li><button	type="button"><i class="axi axi-thumbs-o-down"></i>0</button></li>
@@ -158,13 +158,13 @@ $nums = $db->num_rows($query);
 			<ul class="re_reply_list">
 				<li>
 					<div class="top">
-						<p>홍길동<span>2022-02-02</span></p>
+						<p>Hong Gil Dong<span>2022-02-02</span></p>
 						<ul>
-							<li><a href=""><i class="axi axi-settings"></i> 수정</a></li>
-							<li><a href=""><i class="axi axi-trash-o"></i> 삭제</a></li>
+							<li><a href=""><i class="axi axi-settings"></i> Chỉnh sửa</a></li>
+							<li><a href=""><i class="axi axi-trash-o"></i> Xóa</a></li>
 						</ul>
 					</div>
-					<p>댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용</p>
+					<p>Nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận</p>
 					<div class="bottom">
 						<ul>
 							<li><button	type="button"><i class="axi axi-thumbs-o-up"></i>0</button></li>
@@ -174,13 +174,13 @@ $nums = $db->num_rows($query);
 				</li>
 				<li>
 					<div class="top">
-						<p>홍길동<span>2022-02-02</span></p>
+						<p>Hong Gil Dong<span>2022-02-02</span></p>
 						<ul>
-							<li><a href=""><i class="axi axi-settings"></i> 수정</a></li>
-							<li><a href=""><i class="axi axi-trash-o"></i> 삭제</a></li>
+							<li><a href=""><i class="axi axi-settings"></i> Chỉnh sửa</a></li>
+							<li><a href=""><i class="axi axi-trash-o"></i> Xóa</a></li>
 						</ul>
 					</div>
-					<p>댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용댓글내용</p>
+					<p>Nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận nội dung bình luận</p>
 					<div class="bottom">
 						<ul>
 							<li><button	type="button"><i class="axi axi-thumbs-o-up"></i>0</button></li>

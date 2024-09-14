@@ -152,7 +152,7 @@ var service_write = function(el) {
 						<col width="13%">
 					</colgroup>
 					<tr>
-						<th>구인정보</th>
+						<th>Thông tin việc làm</th>
 						<td>
 							<ul>
 								<?php
@@ -180,7 +180,7 @@ var service_write = function(el) {
 						</td>
 					</tr>
 					<tr>
-						<th>인재정보</th>
+						<th>Thông tin tài năng</th>
 						<td>
 							<ul>
 								<?php

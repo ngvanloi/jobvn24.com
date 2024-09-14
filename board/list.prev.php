@@ -6,7 +6,7 @@
 <?php include '../include/scroll_banner.php'; ?>
 
 <div class="m_title">
-	<button class="back" onclick="history.back()"><i class="axi axi-keyboard-arrow-left"></i></button>커뮤니티<button class="forward" onclick="history.forward()"><i class="axi axi-keyboard-arrow-right"></i></button>
+	<button class="back" onclick="history.back()"><i class="axi axi-keyboard-arrow-left"></i></button>Cộng đồng<button class="forward" onclick="history.forward()"><i class="axi axi-keyboard-arrow-right"></i></button>
 </div>
 
 <div class="wrap1260 my_sub">

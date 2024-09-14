@@ -142,7 +142,7 @@ var ch_tax_status = function(el, no) {
 								</td>
 							</tr>
 							<tr>
-								<th>구인정보</th>
+								<th>Thông tin việc làm</th>
 								<td colspan="3">
 									<?php
 									if(is_array($nf_job->service_name['employ']['main'])) { foreach($nf_job->service_name['employ']['main'] as $k=>$v) {
@@ -155,7 +155,7 @@ var ch_tax_status = function(el, no) {
 								</td>
 							</tr>
 							<tr>
-								<th>인재정보</th>
+								<th>Thông tin tài năng</th>
 								<td colspan="3">
 									<?php
 									if(is_array($nf_job->service_name['resume']['main'])) { foreach($nf_job->service_name['resume']['main'] as $k=>$v) {

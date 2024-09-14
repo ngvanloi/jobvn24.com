@@ -16,7 +16,7 @@
 						<col width="%">
 					</colgroup>
 					<tr>
-						<th class="tal">메인</th>
+						<th class="tal">Chính</th>
 						<th class="tar gray">명</th>
 						<td></td>
 					</tr>
@@ -36,12 +36,12 @@
 						<td></td>
 					</tr>
 					<tr>
-						<th class="tal">구인정보</th>
+						<th class="tal">Thông tin việc làm</th>
 						<th class="tar gray">명</th>
 						<td></td>
 					</tr>
 					<tr>
-						<th class="tal">인재정보</th>
+						<th class="tal">Thông tin tài năng</th>
 						<th class="tar gray">명</th>
 						<td></td>
 					</tr>
@@ -66,7 +66,7 @@
 						<td></td>
 					</tr>
 					<tr>
-						<th class="tal">커뮤니티</th>
+						<th class="tal">Cộng đồng</th>
 						<th class="tar gray">명</th>
 						<td></td>
 					</tr>

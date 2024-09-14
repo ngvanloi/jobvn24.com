@@ -26,7 +26,7 @@ $(function(){
 });
 </script>
 <div class="m_title">
-	<button class="back" onclick="history.back()"><i class="axi axi-keyboard-arrow-left"></i></button>Th�ng tin vi?c l�m<button class="forward" onclick="history.forward()"><i class="axi axi-keyboard-arrow-right"></i></button>
+	<button class="back" onclick="history.back()"><i class="axi axi-keyboard-arrow-left"></i></button>Th�ng tin vi?c l�m<button class="forward" onclick="history.forward()"><i class="axi axi-keyboard-arrow-right"></i></button>
 </div>
 
 <div class="wrap1260 MAT20">
@@ -108,9 +108,9 @@ $(function(){
 
 		<ul class="tab_search">
 			<li class="on"><a href="#loc-employ">통합검색</a></li>
-			<li><a href="#loc-employ">구인정보</a></li>
-			<li><a href="#loc-resume">인재정보</a></li>
-			<li><a href="#loc-board">커뮤니티</a></li>
+			<li><a href="#loc-employ">Thông tin việc làm</a></li>
+			<li><a href="#loc-resume">Thông tin tài năng</a></li>
+			<li><a href="#loc-board">Cộng đồng</a></li>
 		</ul>
 
 		<!--구인정보-->

@@ -410,7 +410,7 @@
 						<?php if ($member['mb_type'] == 'company') { //업소회원 ?>
 
 							<li><a href="#none" class="<?php echo !$_COOKIE['_m-submenu-'] ? 'on' : ''; ?> m-submenu-"
-									k=0>구인정보</a>
+									k=0>Thông tin việc làm</a>
 								<ul class="m-submenu-child- m_nav_2d"
 									style="display:<?php echo !$_COOKIE['_m-submenu-'] ? 'block' : 'none'; ?>;">
 									<li><a href="<?php echo NFE_URL; ?>/employ/list_type.php" class="arrow_no">구인정보 전체보기</a>
@@ -536,7 +536,7 @@
 						<?php } else { //개인회원 ?>
 
 							<li><a href="javascript:void(0)"
-									class="<?php echo !$_COOKIE['_m-submenu-'] ? 'on' : ''; ?> m-submenu-" k=0>인재정보</a>
+									class="<?php echo !$_COOKIE['_m-submenu-'] ? 'on' : ''; ?> m-submenu-" k=0>Thông tin tài năng</a>
 								<ul class="m-submenu-child- m_nav_2d"
 									style="display:<?php echo !$_COOKIE['_m-submenu-'] ? 'block' : 'none'; ?>;">
 									<li><a href="<?php echo NFE_URL; ?>/resume/resume_list.php" class="arrow_no">인재정보 전체보기</a>
@@ -675,8 +675,8 @@
 		<!--//모바일메뉴-->
 	</div>
 	<ul class="custom_top">
-		<li><a href="<?php echo NFE_URL; ?>/employ/list_type.php">구인정보</a></li>
-		<li><a href="<?php echo NFE_URL; ?>/resume/resume_list.php">인재정보</a></li>
+		<li><a href="<?php echo NFE_URL; ?>/employ/list_type.php">Thông tin việc làm</a></li>
+		<li><a href="<?php echo NFE_URL; ?>/resume/resume_list.php">Thông tin tài năng</a></li>
 	</ul>
 	<?php
 	include NFE_PATH . '/include/header_menu.php';

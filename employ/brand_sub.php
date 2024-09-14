@@ -40,7 +40,7 @@
 
 	<section class="jobtable sub">
 		<div class="side_con">
-			<h1>구인정보<span>총<em class="red">4</em>건</span></h1>
+			<h1>Thông tin việc làm<span>총<em class="red">4</em>건</span></h1>
 			<div class="select_area">
 				<select name="" id="">
 					<option value="">최근등록순</option>

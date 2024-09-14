@@ -368,7 +368,7 @@ $(function(){
 					<td><input type="checkbox">현금영수증신청내역</td>
 				</tr>
 				<tr>
-					<th rowspan="15"><input type="checkbox">커뮤니티</td>
+					<th rowspan="15"><input type="checkbox">Cộng đồng</td>
 					<td rowspan="4"><input type="checkbox">게시판관리</td>
 					<td><input type="checkbox">게시판관리</td>
 				</tr>
