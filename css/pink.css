@@ -1,0 +1,177 @@
+input[type="checkbox"]:checked + label.checkstyle1 {background:#e60576 url("../images/checkbox_check.png"); border-color:#e60576;}
+input[type="checkbox"]:checked + label.checkstyle2 {background:#e60576 url("../images/checkbox_check.png"); border-color:#e60576;}
+button.base {background:#e60576;}
+button.base2 {background:#e60576;}
+.employ_skin1 .text_wrap h4::before {border:6px solid #cd0258; }
+.employ_skin2 .text_wrap h4::before {background:#cd0258;}
+.employ_skin3 .text_wrap h4::before {background:#cd0258;}
+input[type="radio"] {accent-color:#cd0258}
+input[type="checkbox"] {accent-color:#cd0258}
+
+/*추가css*/
+header {border-bottom-color:#e60576}
+.m_menu .m_top {background:#e60576}
+.m_menu .m_nav_1d>li>a.on {color:#e60576}
+header .main_search .search_style {color:#e60576; border-color:#e60576;}
+.top_con_wrap .top2 .tema h3 span {color:#e60576;}
+.nav_wrap.skin1 {border-bottom-color:#e60576;}
+.nav_wrap .nav_div .menubg {border-top-color:#e60576}
+.main_con_wrap .necessary .peak p.info {color:#e60576}
+.right_banner .h_top a {color:#e60576}
+.nav_wrap.skin1 .nav_div>ul>li>a:hover {color:#e60576}
+.nav_wrap.skin1 .nav_div>ul>li>a:hover>span {border-color:#e60576;}
+.nav_wrap.skin1 .nav_div>ul>li>a:hover>span i {color:#e60576;}
+.top_con_wrap .top2 .tab_notice .tabnav {border-bottom-color:#e60576}
+.top_con_wrap .top2 .tab_notice .tabnav li a.active:hover {background:#e60576; }
+
+.login_sub .logintab li.on {border-color:#e60576; border-bottom-color:#fff;}
+.login_sub .logininput button {background:#e60576;}
+.popup_layer ul.btn li:last-child button {background:#e60576; border-color:#e60576;}
+.regist_common .right_info button.pay {color:#e60576; border-color:#e60576;}
+.employ_regist .right_info select {color:#e60576; border-color:#e60576;}
+.regist_common .regist_btn3 {border-color:#e60576}
+.employ_regist .guide .side_con button {background:#e60576;}
+.employ_regist .guide .common_box ul li.on {border-color:#e60576;}
+.find_idpw .logintab li.on {border-color:#e60576; border-bottom-color:#fff;}
+.sub_search .s_choice ul.choice3 li.on button {color:#e60576; border-color:#e60576;}
+.sub_search .btn_area ul.btn li:last-child button {background:#e60576;}
+.sub_search .btn_area ul li:last-child button {} /**/
+.brand_sub .top_btn_area ul.fl li button {border-color:#e60576; color:#e60576;}
+.commu table.style3 th {border-top-color:#e60576;}
+.commu.view .cmt_view_bottom .btn_gp2 .good_btn {background-color:#e60576; border-color:#e60576;}
+.commu.view .cmt_view_info {color:#e60576;}
+section.map .map_area .map_search label button {color:#e60576;}
+section.map .map_list li a:hover {border-color:#e60576;}
+section.map .map_list li a:hover .order1 .area i {color:#e60576;}
+
+.top_con_wrap {background:#faf4f7;}
+.my_bgwrap {background:#faf4f7;}
+.my_sub .tab_style2 ul.tab li.on {background:#e60576; border-color:#e60576;}
+.my_sub .tab_style2 ul.tab {border-bottom-color:#e60576}
+.jobtable table {border-top-color:#e60576;}
+.my_sub .tab_style2 .tabcon>div:nth-of-type(1) {border-top-color:#e60576}
+.my_common .my_sub .tab_style1 .tabcon>div:nth-of-type(1) {border-top-color:#e60576}
+.regist_common .common_box {border-top-color:#e60576;}
+.my_sub .rescurrent .tabcon>div:first-child {border-top-color:#e60576;}
+.my_sub .tab_style3 ul.tab li.on {background:#e60576; border-color:#e60576}
+.my_sub .tab_style3 ul.tab {border-bottom-color:#e60576;}
+table.style3 th {border-top-color:#e60576}
+.my_sub .tab_style1 ul.tab {border-bottom-color:#e60576}
+.my_sub .tab_style1 ul.tab li.on {background:#e60576; border-color:#e60576}
+.top_con_wrap .top2 .b_type h3 span {color:#e60576}
+.top_con_wrap .top2 .guaranteed h3 span {color:#e60576}
+.main_con_wrap .lately .th_title {border-top-color:#e60576}
+.top_con_wrap .top2 .guaranteed h3 button {border-color:#e60576;}
+.top_con_wrap .top2 .guaranteed h3 button i {color:#e60576}
+.top_con_wrap .top1 .main_notice h3 {background-color:#e60576;}
+
+/*메인*/
+header .main_search button i {color:#e60576;}
+header .main_search .search_style {color:#e60576;}
+.nav_wrap {border-bottom:2px solid #e60576;}
+.nav_wrap .nav_div>ul>li>a:hover {color:#e60576}
+.nav_wrap .nav_div>ul>li>a:hover>span {border-color:#e60576;}
+.nav_wrap .nav_div>ul>li>a:hover>span i {color:#e60576}
+.nav_wrap.skin2 {background:#e60576;}
+.nav_wrap.skin2 .nav_div>ul>li>a:hover>span i {color:#e60576}
+.nav_wrap.skin2 .nav_div>ul.left_nav>li:first-child>a i {background:#cd0258;}
+.top_con_wrap .top1 .main_login.login div button:nth-child(1) {background:#e60576; border:1px solid #e60576;}
+.top_con_wrap .top2 .tab_notice .tabnav li a{background: #f8f8f8; }
+.top_con_wrap .top2 .tab_notice .tabnav li a:hover {color:#e60576;}
+.top_con_wrap .top2 .tab_notice .tabnav li a.active{background:#e60576; }
+.top_con_wrap .top2 .tab_notice .tabbox li.more {border:1px solid #e60576;}
+.top_con_wrap .top2 .tab_notice .tabbox li.more a {color:#e60576;}
+.top_con_wrap .top2 .location h3 span {color:#e60576;}
+.top_con_wrap .top2 .tema h3 button {border:1px solid #e60576;}
+.top_con_wrap .top2 .tema h3 button i {color:#e60576}
+.top_con_wrap .top2 .tema ul li:hover {border-color:#e60576;}
+.top_con_wrap .top2 .tema ul li:hover a {color:#e60576}
+.main_con_wrap .necessary {border-top-color:#e60576;}
+.main_con_wrap .necessary .peak p.num {color:#e60576}
+.right_banner .right_qmenu ul li a i {color:#e60576}
+.right_banner .right_qmenu ul li a:hover {color:#e60576}
+header .regist_btn li.m_menubtn a {border:1px solid #e60576;}
+header .regist_btn li.m_menubtn a i {color:#e60576}
+.top_con_wrap .top1 .main_login.login_form .form_style button {background:#e60576;}
+
+/*서브*/
+.login .centerwrap div>ul li.on {border:1px solid #e60576;}
+.login .centerwrap .logininput button {background:#e60576}
+.login_sub .m_box ul button {background:#e60576; }
+.register .join_message p:nth-child(3) em {color:#e60576}
+.register .join_message p:nth-child(1) {background:#e60576;}
+.register .order li.on span {background:#e60576; border-color:#e60576; }
+.agreement .agree button {background:#e60576;}
+.my_sub .sub_mymenu dl dd ul li.on a {color:#e60576}
+.my_sub .subcon_area .date_search ul li.on button {background:#e60576; border-color:#e60576;}
+.my_sub .mail_page .button_area ul li.on button {background:#e60576; border-color:#e60576;}
+.find_idpw .input_wrap button {border-radius:3px; background:#e60576; }
+.my_sub .subcon_area .brand_chain ul.fl li.on a {color:#e60576}
+.my_sub .subcon_area .my_brandinfo .no_brand button {background:#e60576;}
+.poll .qa .answer ul:nth-child(2) li.vote button {background:#e60576; border:1px solid #e60576}
+.poll .qa .answer ul li  em {color:#e60576;}
+.poll .qa .question dl dt {background:#e60576}
+.poll .qa .answer ul li p span {background:#e60576}
+.brand_home .top_btn_area ul:nth-child(1) li button {color:#e60576; border:1px solid #e60576;}
+.brand_home .top_btn_area dl dt {background:#e60576; }
+.brand_sub .top_btn_area ul.fr li button {background:#e60576; }
+.brand_sub .brand_title {background-color:#e60576;}
+.commu .best {border-top:2px solid #e60576}
+.commu .best .best_list ul li span {background-color:#e60576;}
+.commu.board_list .side_con .fr button { background:#e60576;}
+.commu .tab_menu li.on a {background:#e60576;}
+.commu .tab_menu li.on {border:1px solid #e60576}
+.sub_search .btn_area ul li:last-child button {background:#e60576}
+.sub_search .s_choice ul li.on button {color:#e60576; border-color:#e60576}
+.sub_search .s_choice ul li.on button span {color:#e60576;}
+.sub_search .s_choice ul.choice1 li.on button {border-color:#e60576; background:#e60576;}
+.sub_search .s_choice ul.choice2 li button {border-color:#e60576; }
+.sub_search .s_choice ul.choice2 li.on button {color:#e60576; border-color:#e60576;}
+.sub_search .s_choice ul.choice2 li.on::before {border-color:#e60576}
+.sub_search .s_choice ul.choice3 li.on::before {border-color:#e60576}
+
+
+
+
+/*채용*/
+.employ_skin1 .text_wrap h4::before {border:6px solid #cd0258; }
+/*이력서등록*/
+.regist_common .right_info>p {border:1px solid #e60576; color:#e60576;}
+.regist_common .right_info .info_box dt {color:#e60576; }
+.regist_common .regist_btn3 {background:#e60576;}
+/*채용공고등록*/
+.employ_regist .guide .common_box ul li.on {border:3px solid #e60576;}
+.employ_regist .right_info button.pay {color:#e60576; border-color:#e60576}
+.employ_detail .job_d1 .condition_box .con1 h4 {border-color:#e60576; color:#e60576;  }
+.employ_detail .job_d1 .accept h4 {border-color:#e60576; color:#e60576;  }
+
+/*개인서비스홈*/
+.my_common .my_infobox {border:1px solid #e60576}
+.my_common .my_infobox .top dl dt {background:#f9f5f7;}
+.my_common .my_infobox .top dl dd {background:#e60576;}
+.my_common .my_infobox .top {border-bottom:1px solid #e60576}
+.my_common .my_infobox .top dl dt span {color:#e60576; }
+.my_common .my_infobox .bottom dl dt {color:#e60576}
+.my_common .my_infobox>span {border:1px solid #e60576; }
+.my_common .my_infobox>span a {color:#e60576; }
+.my_common .my_situbox dl dt {color:#e60576}
+.my_common .my_situbox .service p:nth-child(1) button {background:#e60576; border:1px solid #e60576;}
+.my_common .my_situbox .service p:nth-child(2) button{color:#e60576; border:1px solid #e60576}
+.my_common .my_situbox .service p span {color:#e60576}
+.my_sub .brand_entire table td button {color:#fff; background:#e60576;}
+.my_sub .brand_entire>div p i {color:#e60576}
+.my_sub .brand_entire>div ul {border:1px solid #e60576}
+.my_sub .brand_entire .infobox>div ul li:last-child {background:#e60576}
+.my_common .my_infobox .top dl dt span a  {color:#e60576}
+
+/*지도*/
+section.map .map_list li a:hover {border-color:#e60576;}
+section.map .map_list li a:hover .order1 .area i {color:#e60576;}
+
+/*모바일*/
+.m_menu .m_myinfo {background:#e60576}
+.m_menu .m_nav_1d>li>a.on { color:#e60576;}
+
+header {border-bottom-color:#e60576}
+.main_con_wrap .necessary .common {border-top-color:#e60576}
+

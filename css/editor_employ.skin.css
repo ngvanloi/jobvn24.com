@@ -1,0 +1,37 @@
+/*채용스킨*/
+.e_skincommon {border:1px solid #d5d5d5; margin:0 auto;}
+.e_skincommon .top_img {position:relative; overflow:hidden;}
+.e_skincommon .top_img>div {display:flex; flex-wrap:wrap; justify-content:center; align-items:center; padding:10% 0; background-position:center center; background-repeat:no-repeat; }
+.e_skincommon .text_wrap {padding:3rem 2rem;}
+.e_skincommon .text_wrap p {font-size:1.6rem; color:#111; line-height:1.8rem;}
+.e_skincommon .top_img h3 {font-size:4rem; line-height:5rem; font-weight:700; color:#fff; text-align:center; padding:0 5rem;}
+.e_skincommon .text_wrap h4 {font-size:2.6rem; color:#111111; font-weight:500; margin:5rem 0 2rem 0;}
+.e_skincommon table {width:100%; border:1px solid #d5d5d5;}
+.e_skincommon table th {width:20%; background:#ebebeb; font-size:1.8rem; line-height:2.2rem; font-weight:500; color:#111111; background:#ebebeb; padding:3rem;}
+.e_skincommon table td {width:80%; padding:3rem;}
+.e_skincommon dl:first-child {margin-top:0}
+.e_skincommon dl {margin-top:3rem;}
+.e_skincommon dl dt {font-size:1.8rem; color:#111111; font-weight:500; margin-bottom:1.2rem;}
+.e_skincommon dl dt::before {content:"▣ "}
+.e_skincommon dl dd {margin:5px 0;}
+.e_skincommon dl dd {font-size:1.6rem; color:#333333; line-height:2rem;}
+.e_skincommon dl dd::before {content:"- "}
+.e_skincommon ul li {font-size:1.6rem; color:#333333; line-height:2rem; margin:5px 0;}
+.e_skincommon ul li::before {content:"- "}
+
+
+/*1번스킨*/
+.employ_skin1 .top_img>div {background:url("/images/employ_skin1.png");  background-repeat:no-repeat;  background-size:cover;}
+.employ_skin1 .text_wrap h4::before {content:""; display:inline-block; border:6px solid #0a7bdb; width:12px; height:12px; border-radius:30px; margin-right:1rem; vertical-align:bottom;}
+
+/*2번스킨*/
+.employ_skin2 .top_img>div {background:url("/images/employ_skin2.png");  background-repeat:no-repeat;background-size:cover;}
+.employ_skin2 .top_img h3 {text-align:left;padding:0 5rem;}
+.employ_skin2 .top_img h2 {width:100%; font-size:3.0rem; color:#fff; margin-bottom:1rem;padding:0 5rem; }
+.employ_skin2 .text_wrap h4::before {content:""; display:inline-block; background:#0a7bdb; width:6px; height:24px;  margin-right:1rem; vertical-align:bottom;}
+
+/*3번스킨*/
+.employ_skin3 .top_img>div {background:url("/images/employ_skin3.png"); background-repeat:no-repeat; background-size:cover;}
+.employ_skin3 .top_img h3 {text-align:left;padding:0 5rem; color:#111;}
+.employ_skin3 .top_img h2 {width:100%; font-size:3.0rem; color:#222; margin-bottom:1rem;padding:0 5rem;}
+.employ_skin3 .text_wrap h4::before {content:""; display:inline-block; background:#0a7bdb; width:6px; height:24px;  margin-right:1rem; vertical-align:bottom;}
